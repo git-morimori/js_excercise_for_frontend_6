@@ -137,8 +137,8 @@
   function promiseTaskOfDeletingTodo(index) {
     Promise
       .resolve(index)
-      .then(deleteTodo(index))
-      .then(showTodos())
+      .then(deleteTodo)
+      .then(showTodos);
   }
 
   // 追加ボタンをクリックしたら `promiseTaskOfAddingTodo` を実行する
